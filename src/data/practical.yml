@@ -1,0 +1,29 @@
+# Right column: "Practical and useful things".
+# One entry per link, shown in the order written here.
+#
+# - title: Text shown on the page
+#   url: https://full-link
+
+- title: Setting up Jenkins and GitLab CI/CD
+  url: https://github.com/MarcoLuw/architect-catalog-707/blob/main/setup-catalog/jenkins-gitlab-monitoring/setup.md
+
+- title: Setting up an EKS cluster
+  url: https://github.com/MarcoLuw/architect-catalog-707/blob/main/setup-catalog/eks-setup/setup.md
+
+- title: First thoughts on AWS architecture design
+  url: https://github.com/MarcoLuw/architect-catalog-707/blob/main/setup-catalog/aws-architecture-design/main-architecture-setup.md
+
+- title: Setting up an MSK cluster
+  url: https://github.com/MarcoLuw/architect-catalog-707/blob/main/setup-catalog/msk-introduction/setup.md
+
+- title: Running a ClickHouse cluster with Docker
+  url: https://github.com/MarcoLuw/architect-catalog-707/blob/main/setup-catalog/clickhouse-playground/README.md
+
+- title: "Workshop: HashiCorp Vault introduction"
+  url: https://github.com/MarcoLuw/architect-catalog-707/blob/main/sharing-workshop/docs/slides/vault/vault-101-introduction-and-integration-k8s-and-gitlab.pdf
+
+- title: "Workshop: Kubernetes 4C security"
+  url: https://github.com/MarcoLuw/architect-catalog-707/blob/main/sharing-workshop/docs/slides/k8s-security/Kubernetes-Security-707.pdf
+
+- title: "Workshop: Docker deep dive"
+  url: https://github.com/MarcoLuw/architect-catalog-707/blob/main/sharing-workshop/docs/slides/docker-ws/Docker_deep_dive.pdf

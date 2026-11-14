@@ -1,0 +1,20 @@
+---
+import profile from '../data/profile.json';
+---
+
+<header class="profile">
+	<img class="avatar" src={profile.avatar} alt="" width="220" height="220" />
+	<div>
+		<h1>{profile.name}</h1>
+		<p class="tagline">{profile.tagline}</p>
+		<ul class="contacts">
+			{
+				profile.links.map((link) => (
+					<li>
+						<a href={link.url}>{link.label}</a>
+					</li>
+				))
+			}
+		</ul>
+	</div>
+</header>

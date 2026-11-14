@@ -1,0 +1,118 @@
+:root {
+	color-scheme: light dark;
+	--text: light-dark(#3a3a3a, #e4e4e4);
+	--link: light-dark(#1f6fd0, #7ab4ff);
+	--background: light-dark(#fdfdfd, #17181a);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: var(--background);
+	color: var(--text);
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+	font-size: 1.125rem;
+	line-height: 1.6;
+}
+
+main {
+	max-width: 62rem;
+	margin: 0 auto;
+	padding: 4rem 1.5rem;
+}
+
+a {
+	color: var(--link);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1,
+h2 {
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+h1 {
+	margin: 0 0 1rem;
+	font-size: 3.25rem;
+}
+
+h2 {
+	margin: 0 0 1.25rem;
+	font-size: 1.75rem;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Header: avatar beside name, tagline and contact links */
+.profile {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+	align-items: center;
+	margin-bottom: 4.5rem;
+}
+
+.avatar {
+	justify-self: center;
+	width: 100%;
+	max-width: 220px;
+	height: auto;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.tagline {
+	margin: 0 0 1rem;
+	font-size: 1.25rem;
+}
+
+.contacts {
+	display: flex;
+	gap: 1.75rem;
+}
+
+/* The two link columns */
+.columns {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+}
+
+.links li + li {
+	margin-top: 0.35rem;
+}
+
+/* Stack everything on narrow screens */
+@media (max-width: 40rem) {
+	.profile,
+	.columns {
+		grid-template-columns: 1fr;
+	}
+
+	.profile {
+		gap: 1.5rem;
+		margin-bottom: 3rem;
+	}
+
+	.avatar {
+		justify-self: start;
+		max-width: 140px;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+	}
+}

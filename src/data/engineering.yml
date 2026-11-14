@@ -1,0 +1,14 @@
+# Left column: "Engineering".
+# One entry per link, shown in the order written here.
+#
+# - title: Text shown on the page
+#   url: https://full-link
+
+- title: GitOps platform with ArgoCD, Terraform and Kubernetes
+  url: https://github.com/MarcoLuw/bi-gitops
+
+- title: MLOps platform built on open-source tools
+  url: https://github.com/MarcoLuw/mlops-pipeline
+
+- title: GitOps repository for the MLOps platform
+  url: https://github.com/MarcoLuw/mlops-gitops

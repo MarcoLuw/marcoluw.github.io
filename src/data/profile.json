@@ -1,0 +1,9 @@
+{
+  "name": "Hoang Anh Lu",
+  "tagline": "I'm a machine learning and platform engineer who is trying to build practical things in this AI-conquered world",
+  "avatar": "/avatar.svg",
+  "links": [
+    { "label": "CV", "url": "/cv.pdf" },
+    { "label": "GitHub", "url": "https://github.com/MarcoLuw" }
+  ]
+}

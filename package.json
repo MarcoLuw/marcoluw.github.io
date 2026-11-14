@@ -1,5 +1,5 @@
 {
-  "name": "c-users-lenovo-desktop-project-gh-profile",
+  "name": "marcoluw.github.io",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -12,6 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.4.11"
+    "astro": "^7.4.11",
+    "yaml": "^2.9.1"
   }
 }

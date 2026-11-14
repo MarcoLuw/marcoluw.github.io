@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+	heading: string;
+	collection: 'engineering' | 'practical';
+}
+
+const { heading, collection } = Astro.props;
+
+// Entry ids are positions in the YAML file, so this keeps the file's order.
+const entries = (await getCollection(collection)).sort((a, b) => Number(a.id) - Number(b.id));
+---
+
+<section>
+	<h2>{heading}</h2>
+	<ul class="links">
+		{
+			entries.map((entry) => (
+				<li>
+					<a href={entry.data.url}>{entry.data.title}</a>
+				</li>
+			))
+		}
+	</ul>
+</section>
