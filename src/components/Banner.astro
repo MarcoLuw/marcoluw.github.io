@@ -1,0 +1,12 @@
+---
+import profile from '../data/profile.json';
+---
+
+{
+	profile.banner && (
+		<p class="banner">
+			<span class="banner-label">Status</span>
+			{profile.banner}
+		</p>
+	)
+}

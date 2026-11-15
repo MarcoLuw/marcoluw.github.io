@@ -22,6 +22,7 @@ const linkList = (path: string) =>
 	});
 
 export const collections = {
-	engineering: linkList('src/data/engineering.yml'),
-	practical: linkList('src/data/practical.yml'),
+	practicing: linkList('src/data/practicing.yml'),
+	building: linkList('src/data/building.yml'),
+	sharing: linkList('src/data/sharing.yml'),
 };

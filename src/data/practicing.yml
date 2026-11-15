@@ -1,0 +1,11 @@
+# Left column: "Practicing".
+# One entry per link, shown in the order written here.
+#
+# - title: Text shown on the page
+#   url: https://full-link
+
+- title: QoE MOS Prediction with different ML approaches
+  url: https://github.com/MarcoLuw/QoE-MOS-Prediction
+
+- title: Stereotype and Hate Speech Detection in youtube comments using NLP
+  url: https://github.com/MarcoLuw/semal27-stereoqueereval

@@ -1,9 +1,15 @@
 {
   "name": "Hoang Anh Lu",
   "tagline": "I'm a machine learning and platform engineer who is trying to build practical things in this AI-conquered world",
-  "avatar": "/avatar.svg",
+  "avatar": "/avatar.png",
+  "status": [
+    "Pursuing an MSc in Data Science and Network Intelligence",
+    "Télécom SudParis, Institut Polytechnique de Paris",
+    "Paris, France"
+  ],
+  "banner": "Open to internships from February 2027",
   "links": [
-    { "label": "CV", "url": "/cv.pdf" },
-    { "label": "GitHub", "url": "https://github.com/MarcoLuw" }
+    { "label": "CV", "url": "/cv.pdf", "icon": "/icons/cv.png" },
+    { "label": "GitHub", "url": "https://github.com/MarcoLuw", "icon": "/icons/github.svg" }
   ]
 }

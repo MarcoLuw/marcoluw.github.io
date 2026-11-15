@@ -2,7 +2,8 @@
 	color-scheme: light dark;
 	--text: light-dark(#3a3a3a, #e4e4e4);
 	--link: light-dark(#1f6fd0, #7ab4ff);
-	--background: light-dark(#fdfdfd, #17181a);
+	--background: light-dark(#f3f0e8, #17181a);
+	--muted: light-dark(#6b675f, #a3a3a3);
 }
 
 * {
@@ -14,7 +15,7 @@ body {
 	background: var(--background);
 	color: var(--text);
 	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-	font-size: 1.125rem;
+	font-size: 1rem;
 	line-height: 1.6;
 }
 
@@ -41,12 +42,12 @@ h2 {
 
 h1 {
 	margin: 0 0 1rem;
-	font-size: 3.25rem;
+	font-size: 2.5rem;
 }
 
 h2 {
 	margin: 0 0 1.25rem;
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 }
 
 ul {
@@ -64,19 +65,83 @@ ul {
 	margin-bottom: 4.5rem;
 }
 
-.avatar {
+.portrait {
+	--status-indent: 1.5rem; /* how far right the caption starts */
 	justify-self: center;
-	width: 100%;
-	max-width: 220px;
+	width: fit-content;
+	max-width: 100%;
+	margin: 0;
+}
+
+.avatar {
+	display: block;
+	width: 280px;
+	max-width: 100%;
 	height: auto;
 	aspect-ratio: 1;
 	border-radius: 50%;
 	object-fit: cover;
+	background: light-dark(#e6e1d5, #2a2b2e); /* disc behind the cut-out photo */
+}
+
+.portrait figcaption {
+	margin-top: 1rem;
+	padding-left: var(--status-indent);
+	color: var(--muted);
+	font-size: 0.95rem;
+	line-height: 1.45;
+}
+
+.portrait figcaption span {
+	display: block;
+}
+
+.banner {
+	margin: 0;
+	padding: 0.55rem 1.5rem;
+	background: light-dark(#e9e4d8, #232426);
+	border-bottom: 1px solid light-dark(#d8d2c4, #34363a);
+	font-size: 0.95rem;
+	text-align: center;
+	animation: banner-in 0.5s ease-out both;
+}
+
+.banner-label {
+	margin-right: 0.75rem;
+	color: light-dark(#9a3b26, #e0916f);
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+@keyframes banner-in {
+	from {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.banner {
+		animation: none;
+	}
 }
 
 .tagline {
 	margin: 0 0 1rem;
-	font-size: 1.25rem;
+	font-size: 1.125rem;
+}
+
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	margin-right: 0.4em;
+	vertical-align: -0.125em;
+	background: currentColor;
+	-webkit-mask: var(--icon) center / contain no-repeat;
+	mask: var(--icon) center / contain no-repeat;
 }
 
 .contacts {
@@ -87,8 +152,8 @@ ul {
 /* The two link columns */
 .columns {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 3rem;
+	grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+	gap: 2rem;
 }
 
 .links li + li {
@@ -107,12 +172,16 @@ ul {
 		margin-bottom: 3rem;
 	}
 
-	.avatar {
+	.portrait {
+		--status-indent: 0;
 		justify-self: start;
-		max-width: 140px;
+	}
+
+	.avatar {
+		width: 160px;
 	}
 
 	h1 {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 }
