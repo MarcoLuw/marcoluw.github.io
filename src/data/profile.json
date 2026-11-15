@@ -9,7 +9,7 @@
   ],
   "banner": "Open to internships from February 2027",
   "links": [
-    { "label": "CV", "url": "/cv.pdf", "icon": "/icons/cv.png" },
+    { "label": "CV", "url": "/halu_resume.pdf", "icon": "/icons/cv.png" },
     { "label": "GitHub", "url": "https://github.com/MarcoLuw", "icon": "/icons/github.svg" }
   ]
 }

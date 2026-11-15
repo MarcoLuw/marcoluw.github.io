@@ -22,7 +22,7 @@ import profile from '../data/profile.json';
 			{
 				profile.links.map((link) => (
 					<li>
-						<a href={link.url}>
+						<a href={link.url} target="_blank" rel="noopener noreferrer">
 							{link.icon && <span class="icon" style={`--icon: url(${link.icon})`} aria-hidden="true" />}
 							{link.label}
 						</a>
